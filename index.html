@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Moiz Haider Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="video-container">
+        <!-- <video autoplay loop muted id="video-background">
+            <source src="maintt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+    </div>
+    <div class="content">
+        <header>
+            <div class="container">
+                <h1>Abdul Moiz Haider</h1>
+                <h2>Software Engineer</h2>
+            </div>
+
+        </header>
+        <main>
+            <section id="about" class="active">
+                <div class="container">
+                    <div class="right">
+                        <h2>About Me</h2>
+                        <p>I am a passionate and enthusiastic software engineer with a strong foundation in web development and Android application development. I am eager to contribute to a dynamic team and grow within the industry. I am always looking for new challenges and opportunities to learn and grow.</p>
+                        <p>Completed matriculation in Computer Sciences from The Educators and pursued Intermediate in ICS from KRL Model College, Kahuta. Currently, a BS Software Engineering student at NUML Islamabad. Experienced in full-stack web development using HTML, CSS, JavaScript, Node.js, Pug, Express, and MongoDB, with a preference for front-end development. Additionally, skilled in creating basic Android applications using Java in Android Studio.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skill-list">
+                        <div class="technical-skills">
+                            <h3>Technical Skills</h3>
+                            <ul>
+                                <li>Web Development (Front End Development)</li>
+                                <li>C# (Windows Forms VS)</li>
+                                <li>Mobile App Development (Java) (Basic Level)</li>
+                                <li>MySQL Database Management</li>
+                            </ul>
+                        </div>
+                        <div class="soft-skills">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Time Management</li>
+                                <li>Effective Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <div class="container">
+                    <h2>Work Experience</h2>
+                    <p>I have experience in creating basic Android applications using Java in Android Studio. While I have not yet had the opportunity to work in a software house or industry, I am confident in my abilities and skills. I am eager to apply my knowledge and expertise in a professional setting, and I am enthusiastic about the opportunity to contribute to a dynamic team and grow within the industry. Every individual needs a chance to demonstrate their capabilities, and I am ready to seize that opportunity and excel in a real-world environment.</p>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="project-list">
+                        <ul>
+                            <li>Car Parking Management Using C++</li>
+                            <li><a href="https://abdulmoizhaider.github.io/SpotifyCLone/">SpotifyCLone (Terms And Condition Page Designed)</a></li>
+                            <li>Microdesk Software House Website-(Not live)</li>
+                            <li>Netflix (Database Using SQL Workbench)</li>
+                            <li><a href="https://abdulmoizhaider.github.io/Concordia-College-Kalar-Syedan/">Concordia College Kalar Syedan Branch - WebSite</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
+                <div class="container">
+                    <h2>Education</h2>
+                    <div class="education-list">
+                        <ul>
+                            <li>
+                                <h3>KRL Model College</h3>
+                                <p>ICS (Computer Science)</p>
+                                <p>2019-2021</p>
+                            </li>
+                            <li>
+                                <h3>NUML, Islamabad</h3>
+                                <p>BS-Software Engineering</p>
+                                <p>2021-2025</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a class="contactcol" href="tel:0303-5826532">0303-5826532</a></li>
+                        <li><a class="contactcol" href="mailto:rajaabdulmoiz211@gmail.com">rajaabdulmoiz211@gmail.com</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <nav class="navbar">
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('skills')">Skills</a>
+            <a href="#" onclick="showSection('experience')">Experience</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+            <a href="#" onclick="showSection('education')">Education</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </nav>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
