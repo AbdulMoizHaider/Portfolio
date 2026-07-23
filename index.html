@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abdul Moiz Haider — Business Analyst, Product Management professional, and Project Manager." />
+  <meta name="theme-color" content="#07111f" />
+  <script>document.documentElement.classList.add("js");</script>
+  <title>Abdul Moiz Haider | Business Analyst & Product Manager</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading Abdul Moiz Haider portfolio">
+    <div class="page-loader__inner">
+      <div class="page-loader__mark" aria-hidden="true"><span>AMH</span><i></i></div>
+      <p class="page-loader__label" id="loaderLabel">Connecting strategy to delivery</p>
+      <div class="page-loader__track" aria-hidden="true"><span></span></div>
+      <small>Portfolio experience loading</small>
+    </div>
+  </div>
+  <div class="vertical-scroll-progress" aria-hidden="true"><span id="verticalScrollProgress"></span></div>
+
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Abdul Moiz Haider home">
+        <span class="brand-monogram" aria-hidden="true">
+          <span>AMH</span>
+          <i></i>
+        </span>
+        <span class="brand-copy">
+          <strong>Abdul Moiz Haider</strong>
+          <small>Product · Business Analysis</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="primaryNav">
+        <span class="nav-water-indicator" aria-hidden="true"></span>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="./Abdul-Moiz-Haider-CV.pdf" download="Abdul-Moiz-Haider-CV.pdf" data-cv-download>
+          CV <span aria-hidden="true">↓</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <span class="theme-icon">☼</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Open to impactful product opportunities</div>
+          <p class="hero-kicker">Business Analyst · Product Management · Project Delivery</p>
+          <h1 class="hero-title" aria-label="I transform complex business needs into clear, valuable digital products.">
+            <span class="hero-title__static" aria-hidden="true">I transform complex business needs into</span>
+            <span class="hero-title__dynamic" aria-hidden="true" data-hero-phrases='["clear, valuable digital products.","aligned product roadmaps.","measurable business outcomes.","better user experiences."]'>
+              <span class="gradient-text hero-title__phrase">clear, valuable digital products.</span>
+              <span class="hero-title__caret"></span>
+            </span>
+          </h1>
+          <p class="hero-lead">
+            I’m Abdul Moiz Haider, a business analyst and product professional who connects stakeholders,
+            engineering, design, and QA to deliver practical software experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#projects">
+              Explore my work
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-secondary magnetic" href="./Abdul-Moiz-Haider-CV.pdf" download="Abdul-Moiz-Haider-CV.pdf" data-cv-download>
+              Download CV
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <a href="mailto:rajaabdulmoiz211@gmail.com">rajaabdulmoiz211@gmail.com</a>
+            <span>Islamabad, Pakistan</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="profile-card tilt-card">
+            <div class="profile-media">
+              <img src="assets/profile-photo.jpg" alt="Portrait of Abdul Moiz Haider" width="1537" height="2048" />
+              <div class="profile-image-shade" aria-hidden="true"></div>
+              <div class="profile-topline">
+                <span>Profile / 2026</span>
+                <span class="availability"><i></i> Available</span>
+              </div>
+              <div class="photo-caption">
+                <span>From complexity to clarity</span>
+                <strong>Product thinking. Practical delivery.</strong>
+              </div>
+            </div>
+
+            <div class="profile-body">
+              <div class="profile-identity">
+                <div>
+                  <p class="profile-overline">Business Analyst · Product</p>
+                  <h2>Abdul Moiz Haider</h2>
+                </div>
+                <span class="profile-check" aria-label="Verified professional">✓</span>
+              </div>
+              <p class="profile-role">Connecting stakeholders, design, engineering and QA to deliver valuable software.</p>
+
+              <div class="profile-tags">
+                <span>Product Strategy</span>
+                <span>Agile Delivery</span>
+                <span>UAT</span>
+                <span>Figma</span>
+              </div>
+
+              <div class="profile-stats">
+                <div>
+                  <strong class="counter" data-target="5">5</strong><span>+</span>
+                  <small>Projects documented</small>
+                </div>
+                <div>
+                  <strong class="counter" data-target="20">20</strong><span>+</span>
+                  <small>Reports & dashboards</small>
+                </div>
+                <div>
+                  <strong class="counter" data-target="10">10</strong><span>+</span>
+                  <small>Enterprise adoptions</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-one">BRD · SRS · PRD</div>
+          <div class="floating-chip chip-two">AI / Healthcare</div>
+          <div class="floating-chip chip-three">Product thinking</div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">01</span>
+          <div>
+            <p class="section-kicker">About me</p>
+            <h2>Strategy-minded. Detail-driven. Delivery-focused.</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-story glass-card reveal">
+            <p>
+              My work sits at the intersection of business, technology, and user experience. I translate
+              stakeholder goals into requirements, workflows, user stories, acceptance criteria, and release plans
+              that help teams build with clarity.
+            </p>
+            <p>
+              Across enterprise software, healthcare AI, banking, and web development, I have supported products
+              from discovery through UAT and release—while continuously identifying opportunities to improve
+              usability, efficiency, and customer value.
+            </p>
+          </article>
+
+          <div class="about-highlights">
+            <article class="metric-card reveal" data-delay="100">
+              <span class="metric-value">20%</span>
+              <p>Operational efficiency improvement through process mapping and workflow optimization.</p>
+            </article>
+            <article class="metric-card reveal" data-delay="180">
+              <span class="metric-value">10+</span>
+              <p>Enterprise clients adopted a redesigned platform experience.</p>
+            </article>
+            <article class="metric-card reveal" data-delay="260">
+              <span class="metric-value">End-to-end</span>
+              <p>Experience across requirements, UX workflows, Agile delivery, testing, and release validation.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">02</span>
+          <div>
+            <p class="section-kicker">Experience</p>
+            <h2>Building momentum across products, teams, and industries.</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Jul 2026 — Present</div>
+            <div class="timeline-card glass-card">
+              <div class="role-heading">
+                <div>
+                  <h3>Product Management Representative</h3>
+                  <p>Sequel Technologies · Islamabad</p>
+                </div>
+                <span>Current</span>
+              </div>
+              <ul>
+                <li>Own product planning and delivery coordination for Sequel Technologies products, including AI Scribe and Patient Portal.</li>
+                <li>Coordinate stakeholders, engineering, UI/UX, and QA around customer and business outcomes.</li>
+                <li>Led a platform interface redesign adopted by 10+ enterprise clients.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Mar 2026 — Jun 2026</div>
+            <div class="timeline-card glass-card">
+              <div class="role-heading">
+                <div>
+                  <h3>Junior Business Analyst (AI/IT)</h3>
+                  <p>Sequel Technologies · Islamabad</p>
+                </div>
+              </div>
+              <ul>
+                <li>Created BRDs, SRS, TDDs, epics, user stories, acceptance criteria, and process flows.</li>
+                <li>Designed UI and system workflows in Figma and validated implementation through UAT and front-end QA.</li>
+                <li>Supported sprint planning, backlog refinement, stakeholder meetings, and VAPT issue coordination.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Jun 2025 — Mar 2026</div>
+            <div class="timeline-card glass-card">
+              <div class="role-heading">
+                <div>
+                  <h3>Junior Business Analyst (AI/IT)</h3>
+                  <p>CareCloud (MTBC) · Bagh AJ&amp;K</p>
+                </div>
+              </div>
+              <ul>
+                <li>Translated multi-stakeholder requirements into functional specifications for RCM automation and healthcare operations workflows.</li>
+                <li>Produced BRDs, FRDs, UML diagrams, user stories, UI mockups, and process flows.</li>
+                <li>Partnered with developers and QA throughout the SDLC and supported Agile ceremonies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Apr 2024 — May 2025</div>
+            <div class="timeline-card glass-card">
+              <div class="role-heading">
+                <div>
+                  <h3>Junior Business Analyst</h3>
+                  <p>Al Beruni Tech · Islamabad</p>
+                </div>
+              </div>
+              <ul>
+                <li>Gathered and documented requirements across 5+ projects.</li>
+                <li>Built 20+ reports and dashboards for insight, performance tracking, and decision-making.</li>
+                <li>Improved operational efficiency by 20% through process mapping and workflow optimization.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Mar 2023 — Apr 2024</div>
+            <div class="timeline-card glass-card">
+              <div class="role-heading">
+                <div>
+                  <h3>Web Developer</h3>
+                  <p>Concordia College Kalar Syedan</p>
+                </div>
+              </div>
+              <ul>
+                <li>Developed responsive websites using HTML, CSS, JavaScript, and front-end frameworks.</li>
+                <li>Collaborated with stakeholders to deliver institutional web solutions.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">03</span>
+          <div>
+            <p class="section-kicker">My projects &middot; Selected work</p>
+            <h2>Projects I have worked on across healthcare and banking.</h2>
+            <p class="section-heading__summary">A clear view of my work at CareCloud, Sequel Technologies, and Askari Bank, organized by company and product ecosystem.</p>
+          </div>
+        </div>
+
+        <div class="project-grid project-portfolio-grid">
+          <article class="project-company project-company--carecloud reveal">
+            <header class="project-company__header">
+              <div class="project-company__identity">
+                <span class="company-monogram" aria-hidden="true">CC</span>
+                <div>
+                  <p class="project-type">CareCloud &middot; Healthcare technology</p>
+                  <h3>My CareCloud RCM automation portfolio</h3>
+                  <p>Projects I worked on to simplify revenue-cycle operations, reduce repetitive work, and make complex healthcare workflows easier to manage.</p>
+                </div>
+              </div>
+              <div class="project-company__metrics" aria-label="CareCloud portfolio summary">
+                <div><strong>10+</strong><span>RCM initiatives</span></div>
+                <div><strong>4</strong><span>featured workflows</span></div>
+              </div>
+            </header>
+
+            <section class="project-card project-card--rcm tilt-card">
+              <div class="project-card__content">
+                <div class="project-card__topline">
+                  <span class="project-number">01</span>
+                  <span class="project-company-tag">CareCloud</span>
+                </div>
+                <p class="project-type">Revenue Cycle Management &middot; Automation ecosystem</p>
+                <h3>RCM Automation</h3>
+                <p>Contributed to a portfolio of more than ten automation initiatives designed to simplify complex revenue-cycle and operational workflows.</p>
+                <div class="project-scope"><span>Portfolio scope</span><strong>10+ connected projects</strong></div>
+                <div class="project-tags project-tags--featured">
+                  <span>Superbill Automation</span><span>Prior Authorization</span><span>Medical Coding</span><span>FDA Workflows</span><span>+6 related initiatives</span>
+                </div>
+              </div>
+              <div class="rcm-visual" aria-label="Selected RCM automation initiatives">
+                <div class="rcm-core"><strong>RCM</strong><span>Automation</span><i></i></div>
+                <span class="workflow-node workflow-node--one">Superbill</span>
+                <span class="workflow-node workflow-node--two">Prior Auth</span>
+                <span class="workflow-node workflow-node--three">Coding</span>
+                <span class="workflow-node workflow-node--four">FDA</span>
+                <span class="workflow-node workflow-node--more">+6</span>
+                <i class="workflow-path workflow-path--one"></i><i class="workflow-path workflow-path--two"></i><i class="workflow-path workflow-path--three"></i><i class="workflow-path workflow-path--four"></i>
+              </div>
+            </section>
+          </article>
+
+          <article class="project-company project-company--sequel reveal" data-delay="90">
+            <header class="project-company__header">
+              <div class="project-company__identity">
+                <span class="company-monogram company-monogram--sequel" aria-hidden="true">ST</span>
+                <div>
+                  <p class="project-type">Sequel Technologies &middot; Digital health products</p>
+                  <h3>My Sequel Technologies product work</h3>
+                  <p>Products I worked on across AI-assisted clinical documentation and patient-facing digital experiences.</p>
+                </div>
+              </div>
+              <div class="project-company__metrics" aria-label="Sequel Technologies portfolio summary">
+                <div><strong>2</strong><span>health products</span></div>
+                <div><strong>AI + PX</strong><span>product focus</span></div>
+              </div>
+            </header>
+
+            <div class="sequel-products-grid">
+              <section class="project-card project-card--compact project-card--scribe tilt-card">
+                <div class="project-card__topline"><span class="project-number">02</span><span class="project-company-tag">Sequel Technologies</span></div>
+                <div class="project-icon">AI</div>
+                <p class="project-type">Clinical documentation &middot; Healthcare AI</p>
+                <h3>AI Scribe</h3>
+                <p>Supported requirements, feature documentation, usability improvements, and delivery coordination for an AI-assisted clinical documentation product.</p>
+                <div class="project-tags"><span>User stories</span><span>Acceptance criteria</span><span>SDLC</span></div>
+              </section>
+              <section class="project-card project-card--compact project-card--portal tilt-card">
+                <div class="project-card__topline"><span class="project-number">03</span><span class="project-company-tag">Sequel Technologies</span></div>
+                <div class="project-icon">PX</div>
+                <p class="project-type">Patient experience &middot; Digital self-service</p>
+                <h3>Patient Portal</h3>
+                <p>Translated patient-facing workflows into clearer requirements and testable experiences, with attention to usability and system interactions.</p>
+                <div class="project-tags"><span>UX flows</span><span>Requirements</span><span>UAT</span></div>
+              </section>
+            </div>
+          </article>
+
+          <article class="project-company project-company--askari reveal" data-delay="160">
+            <header class="project-company__header">
+              <div class="project-company__identity">
+                <span class="company-monogram company-monogram--bank" aria-hidden="true">AB</span>
+                <div>
+                  <p class="project-type">Askari Bank &middot; Financial technology</p>
+                  <h3>Banking software and workflow improvement</h3>
+                  <p>Experience applying software-analysis and process-improvement thinking within a banking environment.</p>
+                </div>
+              </div>
+              <span class="company-period">Internship &middot; 2025</span>
+            </header>
+            <section class="project-card project-card--banking tilt-card">
+              <div class="project-card__content">
+                <div class="project-card__topline"><span class="project-number">04</span><span class="project-company-tag">Askari Bank</span></div>
+                <p class="project-type">Banking software &middot; Process optimization</p>
+                <h3>Banking Software</h3>
+                <p>Worked on banking software workflows and contributed improvement ideas, including a clearer credit-card application and management experience.</p>
+                <div class="project-tags"><span>Banking workflows</span><span>Requirement analysis</span><span>Process improvement</span></div>
+              </div>
+              <div class="banking-flow" aria-label="Banking software workflow">
+                <div class="banking-flow__stage"><span>01</span><strong>Application</strong></div><i aria-hidden="true"></i>
+                <div class="banking-flow__stage"><span>02</span><strong>Review</strong></div><i aria-hidden="true"></i>
+                <div class="banking-flow__stage"><span>03</span><strong>Management</strong></div><b aria-hidden="true"></b>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">04</span>
+          <div>
+            <p class="section-kicker">Capabilities</p>
+            <h2>A cross-functional toolkit for better product decisions.</h2>
+          </div>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-cloud reveal">
+            <span class="skill-pill large">Requirement Gathering</span>
+            <span class="skill-pill">Product Planning</span>
+            <span class="skill-pill">BRD / FRD / SRS</span>
+            <span class="skill-pill large">User Stories & Acceptance Criteria</span>
+            <span class="skill-pill">UML</span>
+            <span class="skill-pill">Process Mapping</span>
+            <span class="skill-pill">Workflow Design</span>
+            <span class="skill-pill">Gap Analysis</span>
+            <span class="skill-pill large">UAT Coordination</span>
+            <span class="skill-pill">Root Cause Analysis</span>
+            <span class="skill-pill">Agile Collaboration</span>
+            <span class="skill-pill">Sprint Planning</span>
+            <span class="skill-pill">Backlog Refinement</span>
+            <span class="skill-pill">Data Analysis</span>
+            <span class="skill-pill">Front-end QA</span>
+          </div>
+
+          <div class="tool-stack reveal" data-delay="150">
+            <div class="tool-stack__heading">
+              <p>Working toolkit</p>
+              <h3>Tools, development stack &amp; AI</h3>
+            </div>
+
+            <div class="tool-group">
+              <h4>Product &amp; collaboration</h4>
+              <div class="tool-list">
+                <div class="tool-item"><span>Jira</span><i style="--level: 92%"></i></div>
+                <div class="tool-item"><span>Figma</span><i style="--level: 88%"></i></div>
+                <div class="tool-item"><span>Draw.io / Lucidchart</span><i style="--level: 90%"></i></div>
+                <div class="tool-item"><span>Microsoft Office</span><i style="--level: 90%"></i></div>
+                <div class="tool-item"><span>HTML / CSS / JavaScript</span><i style="--level: 82%"></i></div>
+              </div>
+            </div>
+
+            <div class="tool-showcase">
+              <section class="tool-domain-card tool-domain-card--dev" aria-labelledby="dev-stack-title">
+                <div class="tool-domain-card__header">
+                  <span class="tool-domain-card__icon" aria-hidden="true">&lt;/&gt;</span>
+                  <div>
+                    <p>Build layer</p>
+                    <h4 id="dev-stack-title">Development stack</h4>
+                  </div>
+                </div>
+                <div class="tech-node-grid" aria-label="Development technologies">
+                  <span class="tech-node"><i>R</i><strong>React.js</strong><small>Interfaces</small></span>
+                  <span class="tech-node"><i>Nx</i><strong>Next.js</strong><small>Web apps</small></span>
+                  <span class="tech-node"><i>Nd</i><strong>Node.js</strong><small>Services</small></span>
+                  <span class="tech-node"><i>Mg</i><strong>MongoDB</strong><small>Documents</small></span>
+                  <span class="tech-node"><i>Fb</i><strong>Firebase</strong><small>Cloud data</small></span>
+                  <span class="tech-node"><i>SQL</i><strong>SQL</strong><small>Relational data</small></span>
+                </div>
+              </section>
+
+              <section class="tool-domain-card tool-domain-card--ai" aria-labelledby="ai-tools-title">
+                <div class="tool-domain-card__header">
+                  <span class="tool-domain-card__icon" aria-hidden="true">&#10022;</span>
+                  <div>
+                    <p>AI co-pilots</p>
+                    <h4 id="ai-tools-title">AI tools</h4>
+                  </div>
+                </div>
+                <div class="ai-tool-grid" aria-label="Artificial intelligence tools">
+                  <span class="ai-tool"><i>C</i><strong>Claude</strong><small>Analysis &amp; writing</small></span>
+                  <span class="ai-tool"><i>GPT</i><strong>ChatGPT</strong><small>Research &amp; ideation</small></span>
+                  <span class="ai-tool"><i>G</i><strong>Gemini</strong><small>Multimodal support</small></span>
+                  <span class="ai-tool"><i>B44</i><strong>Base44</strong><small>Rapid building</small></span>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="container two-column-section">
+        <div>
+          <div class="mini-heading reveal">
+            <p class="section-kicker">Education</p>
+            <h2>Technical foundation.</h2>
+          </div>
+          <article class="education-card glass-card reveal">
+            <span>2021 — 2025</span>
+            <h3>Bachelor of Software Engineering</h3>
+            <p>National University of Modern Languages (NUML), Islamabad</p>
+          </article>
+        </div>
+
+        <div>
+          <div class="mini-heading reveal">
+            <p class="section-kicker">Internships & certifications</p>
+            <h2>Continuous learning.</h2>
+          </div>
+          <div class="cert-list">
+            <button class="cert-card reveal" type="button" data-certificate-image="assets/certificates/saint-louis-project-management.jpg" data-certificate-title="Project Management Associate Virtual Internship" aria-haspopup="dialog">
+              <span>2025</span>
+              <div>
+                <h3>Project Management Associate Virtual Internship</h3>
+                <p>Saint Louis University · Excelerate</p>
+                <span class="cert-view">View certificate <i aria-hidden="true">↗</i></span>
+              </div>
+            </button>
+            <button class="cert-card reveal" type="button" data-delay="90" data-certificate-image="assets/certificates/askari-bank-internship.jpg" data-certificate-title="Project Management Unit Internship" aria-haspopup="dialog">
+              <span>Jul–Aug 2025</span>
+              <div>
+                <h3>Project Management Unit Internship</h3>
+                <p>Askari Bank Limited · Askari Emerge</p>
+                <span class="cert-view">View certificate <i aria-hidden="true">↗</i></span>
+              </div>
+            </button>
+            <button class="cert-card reveal" type="button" data-delay="180" data-certificate-image="assets/certificates/johns-hopkins-web-development.jpg" data-certificate-title="HTML, CSS &amp; JavaScript for Web Developers" aria-haspopup="dialog">
+              <span>Feb 2025</span>
+              <div>
+                <h3>HTML, CSS &amp; JavaScript for Web Developers</h3>
+                <p>Johns Hopkins University · Coursera</p>
+                <span class="cert-view">View certificate <i aria-hidden="true">↗</i></span>
+              </div>
+            </button>
+            <button class="cert-card reveal" type="button" data-delay="270" data-certificate-image="assets/certificates/proprofs-frontend-development.jpg" data-certificate-title="Frontend Development Internship" aria-haspopup="dialog">
+              <span>Jul–Aug 2024</span>
+              <div>
+                <h3>Frontend Development Internship</h3>
+                <p>Pro Profs Tech</p>
+                <span class="cert-view">View certificate <i aria-hidden="true">↗</i></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div class="contact-copy">
+          <p class="section-kicker">Let’s connect</p>
+          <h2>Have a product challenge worth solving?</h2>
+          <p>I’m interested in business analysis, product management, and project delivery opportunities where strong collaboration and clear thinking make a measurable difference.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="contact-link magnetic" href="mailto:rajaabdulmoiz211@gmail.com">
+            <span>Email</span>
+            <strong>rajaabdulmoiz211@gmail.com</strong>
+            <i>↗</i>
+          </a>
+          <a class="contact-link magnetic" href="tel:+923035826532">
+            <span>Phone</span>
+            <strong>+92 303 5826532</strong>
+            <i>↗</i>
+          </a>
+          <a class="contact-link magnetic" href="https://www.linkedin.com/in/abdulmoizhaider" target="_blank" rel="noopener noreferrer">
+            <span>LinkedIn</span>
+            <strong>AbdulMoizHaider</strong>
+            <i>↗</i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="certificate-modal" id="certificateModal" hidden>
+    <div class="certificate-modal__backdrop" data-certificate-close aria-hidden="true"></div>
+    <section class="certificate-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle">
+      <header class="certificate-modal__header">
+        <div>
+          <p class="section-kicker">Certificate preview</p>
+          <h2 id="certificateModalTitle">Certificate</h2>
+        </div>
+        <button class="certificate-modal__close" type="button" data-certificate-close aria-label="Close certificate preview">
+          <span aria-hidden="true">×</span>
+        </button>
+      </header>
+      <div class="certificate-modal__image-wrap" id="certificateImageWrap">
+        <div class="certificate-image-loader" aria-hidden="true">
+          <span></span>
+          <p>Loading credential</p>
+        </div>
+        <img id="certificateModalImage" src="" alt="" />
+      </div>
+      <p class="certificate-modal__hint">Press Esc or click outside the certificate to close.</p>
+    </section>
+  </div>
+
+  <div class="site-toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Abdul Moiz Haider.</p>
+      <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to the top">
+        <span>Back to top</span>
+        <i aria-hidden="true">↑</i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
