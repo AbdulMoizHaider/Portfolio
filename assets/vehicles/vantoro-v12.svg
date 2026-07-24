@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Vantoro V12 supercar</title>
+  <desc id="desc">A red V12 supercar shown from the rear on a dramatic night road.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#090b18"/><stop offset=".56" stop-color="#2a2947"/><stop offset="1" stop-color="#9c6078"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#262a33"/><stop offset="1" stop-color="#07080d"/></linearGradient>
+    <linearGradient id="body" x1=".12" y1=".03" x2=".9" y2=".95"><stop stop-color="#ff6c75"/><stop offset=".28" stop-color="#c8213a"/><stop offset=".7" stop-color="#6f0b1e"/><stop offset="1" stop-color="#21020a"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b7ddec"/><stop offset=".32" stop-color="#3d4d62"/><stop offset="1" stop-color="#05070e"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="11" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="800" fill="url(#sky)"/>
+  <circle cx="952" cy="164" r="44" fill="#fff0ce" opacity=".86" filter="url(#glow)"/>
+  <path d="M0 320l174-105 123 83 130-135 167 139 126-104 139 107 157-115 264 143v76H0z" fill="#171a31"/>
+  <path d="M0 394L410 306h460l410 88v406H0z" fill="url(#road)"/>
+  <path d="M565 324h150l310 476H255z" fill="#242832" opacity=".86"/>
+  <path d="M628 350h24l26 450h-76z" fill="#f0f1ed" opacity=".64"/>
+  <ellipse cx="640" cy="681" rx="377" ry="68" fill="#000" opacity=".67" filter="url(#blur)"/>
+  <g>
+    <rect x="255" y="499" width="86" height="180" rx="30" fill="#030405"/><rect x="939" y="499" width="86" height="180" rx="30" fill="#030405"/>
+    <path d="M266 614l25-173 146-158 121-63h164l121 63 146 158 25 173-62 76H328z" fill="url(#body)" stroke="#fff" stroke-opacity=".25" stroke-width="5"/>
+    <path d="M492 286l70-53h156l70 53 67 148H425z" fill="url(#glass)"/>
+    <path d="M514 292l52-39h24l41 180H446z" fill="#d7eef7" opacity=".18"/>
+    <path d="M332 470l244 72" stroke="#ff3858" stroke-width="25" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M948 470L704 542" stroke="#ff3858" stroke-width="25" stroke-linecap="round" filter="url(#glow)"/>
+    <text x="640" y="578" text-anchor="middle" fill="#fff4f5" font-size="34" font-family="Arial, sans-serif" font-weight="800" letter-spacing="8">VANTORO</text>
+    <rect x="350" y="627" width="580" height="72" rx="20" fill="#040609"/>
+    <rect x="552" y="596" width="176" height="70" rx="15" fill="#091018" stroke="#d9e0e5" stroke-opacity=".4"/>
+    <text x="640" y="640" text-anchor="middle" fill="#f7fafb" font-size="27" font-family="Arial, sans-serif" font-weight="700">AMH LUX</text>
+    <circle cx="462" cy="665" r="25" fill="#bfc7cd"/><circle cx="818" cy="665" r="25" fill="#bfc7cd"/>
+    <circle cx="462" cy="665" r="15" fill="#15191e"/><circle cx="818" cy="665" r="15" fill="#15191e"/>
+  </g>
+  <text x="70" y="98" fill="#fff" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="7">AURORA RUSH</text>
+  <text x="70" y="137" fill="#d0b8c5" font-family="Arial, sans-serif" font-size="19" letter-spacing="4">VANTORO V12 SUPERCAR</text>
+</svg>
